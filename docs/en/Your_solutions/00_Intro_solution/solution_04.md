@@ -1,39 +1,54 @@
-# Physics Problem: Rearranging Formulas
+To rearrange the formula for the period of a simple pendulum to solve for the acceleration due to gravity ($g$), we will isolate $g$ through a series of algebraic steps.
 
-## 1. Key Definitions and Formulas
+### Task Conditions and Values
 
-Before solving the problem, it is essential to understand the variables involved in the formula for a simple pendulum:
+* **Original Equation:** $T = 2\pi \sqrt{\frac{L}{g}}$
+* **Variables:** * $T$ (Period)
+* $L$ (Length)
+* $g$ (Acceleration due to gravity)
 
-* **Period ($T$):** The time required for one complete cycle of oscillation (back and forth). It is typically measured in seconds ($s$).
-* **Length ($L$):** The distance from the pivot point to the center of mass of the pendulum bob. It is typically measured in meters ($m$).
-* **Acceleration due to Gravity ($g$):** The constant acceleration exerted by gravity on a free-falling object. On Earth, this is approximately $9.81 \, m/s^2$.
-* **The Pendulum Formula:**
-    $$T = 2\pi \sqrt{\frac{L}{g}}$$
 
-## 2. Solving the Problem
+* **Goal:** Express $g$ in terms of $T$ and $L$.
 
-**Task:** Rearrange the equation $T = 2\pi \sqrt{\frac{L}{g}}$ to solve for $g$.
+---
 
-### Step-by-Step Derivation:
+### Step-by-Step Solution
 
-1.  **Start with the original formula:**
-    $$T = 2\pi \sqrt{\frac{L}{g}}$$
+**Step 1: Isolate the square root**
+Divide both sides of the equation by $2\pi$:
 
-2.  **Divide both sides by $2\pi$ to isolate the square root:**
-    $$\frac{T}{2\pi} = \sqrt{\frac{L}{g}}$$
 
-3.  **Square both sides of the equation to remove the square root:**
-    $$\left(\frac{T}{2\pi}\right)^2 = \frac{L}{g}$$
+$$\frac{T}{2\pi} = \sqrt{\frac{L}{g}}$$
 
-4.  **Distribute the square to the numerator and denominator:**
-    $$\frac{T^2}{4\pi^2} = \frac{L}{g}$$
+**Step 2: Remove the square root**
+Square both sides of the equation to eliminate the radical:
 
-5.  **Multiply both sides by $g$ to move it out of the denominator:**
-    $$g \cdot \frac{T^2}{4\pi^2} = L$$
 
-6.  **Multiply both sides by $\frac{4\pi^2}{T^2}$ (or divide by $\frac{T^2}{4\pi^2}$) to isolate $g$:**
-    $$g = \frac{4\pi^2 L}{T^2}$$
+$$\left( \frac{T}{2\pi} \right)^2 = \frac{L}{g}$$
 
-### Final Answer:
+**Step 3: Distribute the square**
+Apply the exponent to both the numerator and the denominator on the left side:
+
+
+$$\frac{T^2}{4\pi^2} = \frac{L}{g}$$
+
+**Step 4: Isolate $g$**
+To get $g$ by itself, we can first multiply both sides by $g$:
+
+
+$$g \cdot \frac{T^2}{4\pi^2} = L$$
+
+
+Then, multiply both sides by the reciprocal of the fraction $\frac{T^2}{4\pi^2}$ (which is $\frac{4\pi^2}{T^2}$):
+
+
+$$g = \frac{4\pi^2 L}{T^2}$$
+
+---
+
+### Final Answer
+
 The rearranged formula for the acceleration due to gravity is:
+
+
 $$g = \frac{4\pi^2 L}{T^2}$$
