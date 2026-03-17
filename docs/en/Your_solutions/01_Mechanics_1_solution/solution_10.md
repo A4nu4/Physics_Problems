@@ -68,4 +68,3 @@ $$h = v_z \cdot T = b \cdot \frac{2\pi}{\omega}$$
 
 
 
-Would you like me to calculate the specific velocity or acceleration vectors at a certain time $t$ for this helix?
