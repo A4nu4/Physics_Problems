@@ -1,97 +1,92 @@
-To determine if Alice and Bob collide or how close they get, we need to analyze their positions $A(t)$ and $B(t)$ over time.
+To solve this problem, we need to distinguish between the **paths** (the set of all points each person visits) and their **positions at any given time $t$** (which determines a collision).
 
-### 1. Do the paths intersect?
+### Given Starting Values:
 
-An intersection of **paths** means there exist times $t_1$ and $t_2$ such that $A(t_1) = B(t_2)$. For a **collision**, we must have $t_1 = t_2 = t$. Let's check for a collision first by setting the coordinates equal for the same time $t$:
-
-**Horizontal position ($x$):**
-
-
-$$2 + t = 2t - 1 \implies t = 3$$
-
-**Vertical position ($y$):**
-
-
-$$8 - 3t = 2t + 2 \implies 5t = 6 \implies t = 1.2$$
-
-Since the times required for the $x$ and $y$ coordinates to match are different ($3 \neq 1.2$), **Alice and Bob do not collide.**
+* **Alice's path:** $A(t) = (2+t, \ 8-3t)$
+* **Bob's path:** $B(t) = (2t-1, \ 2t+2)$
 
 ---
 
-### 2. Determine the Minimum Distance
+### Step 1: Determine if their paths intersect
 
-To find the minimum distance, we look at the displacement vector between them at any time $t$:
+Paths intersect if there exists a time $t_1$ for Alice and $t_2$ for Bob such that they occupy the same point $(x, y)$. This leads to a system of equations:
 
+1. $2 + t_1 = 2t_2 - 1 \implies t_1 - 2t_2 = -3$
+2. $8 - 3t_1 = 2t_2 + 2 \implies -3t_1 - 2t_2 = -6 \implies 3t_1 + 2t_2 = 6$
 
-$$D(t) = B(t) - A(t)$$
-
-$$D(t) = ((2t - 1) - (2 + t), (2t + 2) - (8 - 3t))$$
-
-$$D(t) = (t - 3, 5t - 6)$$
-
-The square of the distance $f(t) = d^2$ is:
+Adding the two equations:
 
 
-$$f(t) = (t - 3)^2 + (5t - 6)^2$$
+$$(t_1 - 2t_2) + (3t_1 + 2t_2) = -3 + 6$$
+
+$$4t_1 = 3 \implies t_1 = 0.75$$
+
+Substituting $t_1$ back into the first equation:
 
 
-Expanding the terms:
+$$0.75 - 2t_2 = -3 \implies 2t_2 = 3.75 \implies t_2 = 1.875$$
+
+**Result:** The paths **do intersect**.
+To find the location, plug $t_1 = 0.75$ into $A(t)$:
 
 
-$$f(t) = (t^2 - 6t + 9) + (25t^2 - 60t + 36)$$
+$$x = 2 + 0.75 = 2.75$$
+
+$$y = 8 - 3(0.75) = 8 - 2.25 = 5.75$$
+
+
+The paths intersect at the point **$(2.75, 5.75)$**.
+
+---
+
+### Step 2: Determine if they collide
+
+A collision occurs only if they are at the same point at the **same time** ($t_1 = t_2 = t$).
+From Step 1, we saw that Alice reaches the intersection point at $t = 0.75$, while Bob reaches it later at $t = 1.875$. Since these times are different, they reach the crossing point at different moments.
+
+**Conclusion:** Alice and Bob **do not collide**.
+
+---
+
+### Step 3: Determine the minimum distance
+
+Since they do not collide, we find the time $t$ when the distance between them is minimized. The distance $d(t)$ is given by the distance formula:
+
+
+$$d(t) = \sqrt{(x_A - x_B)^2 + (y_A - y_B)^2}$$
+
+$$d(t) = \sqrt{((2+t) - (2t-1))^2 + ((8-3t) - (2t+2))^2}$$
+
+$$d(t) = \sqrt{(3-t)^2 + (6-5t)^2}$$
+
+Let $f(t) = d(t)^2$ (minimizing the square of the distance is equivalent to minimizing the distance):
+
+
+$$f(t) = (9 - 6t + t^2) + (36 - 60t + 25t^2)$$
 
 $$f(t) = 26t^2 - 66t + 45$$
 
+To find the minimum, we take the derivative and set it to zero:
+
+
+$$f'(t) = 52t - 66 = 0$$
+
+$$t = \frac{66}{52} = \frac{33}{26} \approx 1.27$$
+
+Now, calculate the minimum distance at $t = \frac{33}{26}$:
+
+
+$$f\left(\frac{33}{26}\right) = 26\left(\frac{33}{26}\right)^2 - 66\left(\frac{33}{26}\right) + 45$$
+
+$$f\left(\frac{33}{26}\right) = \frac{1089}{26} - \frac{2178}{26} + \frac{1170}{26} = \frac{81}{26}$$
+
+$$d_{min} = \sqrt{\frac{81}{26}} = \frac{9}{\sqrt{26}} \approx 1.77$$
+
 ---
 
-### 3. Minimize the Distance Function
+### Final Summary:
 
-To find when the distance is at its minimum, we take the derivative of $f(t)$ and set it to zero:
-
-
-$$f'(t) = 52t - 66$$
-
-
-Setting $f'(t) = 0$:
-
-
-$$52t = 66 \implies t = \frac{66}{52} = \frac{33}{26} \approx \mathbf{1.27 \text{ s}}$$
-
----
-
-
-### Revised Step 4: Calculate the Minimum Distance
-
-Using the positions $A(t) = (2+t, 8-3t)$ and $B(t) = (2t-1, 2t+2)$, we first find the difference in their coordinates:
-
-* $\Delta x = (2t - 1) - (2 + t) = t - 3$
-* $\Delta y = (2t + 2) - (8 - 3t) = 5t - 6$
-
-Now, apply the **squared distance formula**:
-
-
-$$d^2 = (t - 3)^2 + (5t - 6)^2$$
-
-
-Expanding this gives the quadratic function we minimized earlier:
-
-
-$$f(t) = 26t^2 - 66t + 45$$
-
-Finally, substitute the time of closest approach $t = \frac{33}{26}$ back into this formula:
-
-$$d^2 = 26\left(\frac{33}{26}\right)^2 - 66\left(\frac{33}{26}\right) + 45$$
-
-$$d^2 = \frac{1089}{26} - \frac{2178}{26} + \frac{1170}{26}$$
-
-$$d^2 = \frac{81}{26} \approx 3.115$$
-
-Taking the square root to find the actual minimum distance:
-
-$$d = \sqrt{\frac{81}{26}} = \frac{9}{\sqrt{26}} \approx \mathbf{1.765 \text{ units}}$$
-
-### Summary
-
-* **Collision:** No.
-* **Time of closest approach:** $t \approx 1.27 \text{ s}$
-* **Minimum distance:** $\approx 1.765 \text{ units}$
+* **Do the paths intersect?** Yes, at $(2.75, 5.75)$.
+* **Do they collide?** No, they reach the intersection point at different times.
+* **Minimum Distance:** Approximately **$1.77$ units**.
+* **Time of Minimum Distance:** At **$t \approx 1.27$**.
