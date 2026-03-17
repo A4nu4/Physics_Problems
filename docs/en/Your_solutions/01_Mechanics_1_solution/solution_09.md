@@ -3,7 +3,7 @@ To determine which object has greater momentum, we use the physics formula for l
 ### Given Starting Values:
 
 * **Fly:**
-*  Mass ($m_{fly}$) = $2 \text{ g} = 0.002 \text{ kg}$
+* Mass ($m_{fly}$) = $2 \text{ g} = 0.002 \text{ kg}$
 * Velocity ($v_{fly}$) = $10 \text{ m/s}$
 
 
@@ -49,4 +49,5 @@ $$p_{ball} = 0.06 \text{ kg}\cdot\text{m/s}$$
 Since $0.06 > 0.02$, the **60-gram tennis ball** has greater momentum.
 
 Even though the fly is moving ten times faster than the tennis ball, the tennis ball's mass is thirty times greater than the fly's mass, which ultimately results in a higher momentum for the ball.
+
 
