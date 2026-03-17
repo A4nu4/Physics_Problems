@@ -1,6 +1,6 @@
 To solve this problem, we will work through the parametric equations to find the Cartesian relationship, the motion vectors, and their magnitudes.
 
-### Given Starting Values:
+### Given Values:
 
 * **Position Components:** $x(t) = 2t^2$ and $y(t) = 3t^3$
 * **Assumed Domain:** $t \ge 0$ (for a standard trajectory starting from the origin)
@@ -92,3 +92,4 @@ $$|\vec a(t)| = \sqrt{16 + 324t^2} = 2\sqrt{4 + 81t^2}$$
 | **Speed** $ | \vec v(t) |
 | **Acceleration** $\vec a(t)$ | $(4, 18t)$ |
 | **Acc. Magnitude** $ | \vec a(t) |
+
