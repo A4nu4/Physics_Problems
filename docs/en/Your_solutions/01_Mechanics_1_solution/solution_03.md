@@ -1,6 +1,6 @@
 To solve this problem, we need to distinguish between the **paths** (the set of all points each person visits) and their **positions at any given time $t$** (which determines a collision).
 
-### Given Starting Values:
+### Given Values:
 
 * **Alice's path:** $A(t) = (2+t, \ 8-3t)$
 * **Bob's path:** $B(t) = (2t-1, \ 2t+2)$
@@ -90,3 +90,4 @@ $$d_{min} = \sqrt{\frac{81}{26}} = \frac{9}{\sqrt{26}} \approx 1.77$$
 * **Do they collide?** No, they reach the intersection point at different times.
 * **Minimum Distance:** Approximately **$1.77$ units**.
 * **Time of Minimum Distance:** At **$t \approx 1.27$**.
+
