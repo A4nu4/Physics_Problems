@@ -61,5 +61,3 @@ $$KE_f = 105 \text{ J}$$
 ### Explanation
 
 **No, kinetic energy is not conserved.** In this collision, the kinetic energy decreased from **$315 \text{ J}$** to **$105 \text{ J}$**. This loss of **$210 \text{ J}$** occurs because the collision is **inelastic**. The "missing" energy is converted into other forms, primarily **thermal energy** (heat) and **sound energy** generated at the moment the runner lands on the cart.
-
-Would you like me to calculate the impulse exerted by the runner on the cart during this jump?
