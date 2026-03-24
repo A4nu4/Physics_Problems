@@ -1,5 +1,3 @@
-To make the solution easier to read, I have increased the spacing between the steps and the mathematical functions.
-
 ### Given Starting Values:
 * **Mass of the runner ($m_1$):** $70 \text{ kg}$
 * **Initial velocity of the runner ($v_1$):** $3 \text{ m/s}$
