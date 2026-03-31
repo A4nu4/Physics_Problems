@@ -4,7 +4,11 @@ To find the time-dependent physical quantities for the particle, we perform succ
 
 ### Given Starting Values:
 * **Mass ($m$):** $0.5 \text{ kg}$
-* **Position Vector:** $\vec{r}(t) = (5t^2 - t) \hat{i} + (2t^3) \hat{j} + (-3t + 2) \hat{k}$
+* **Position Vector Components:**
+    * **$x(t)$:** $5t^2 - t$
+    * **$y(t)$:** $2t^3$
+    * **$z(t)$:** $-3t + 2$
+* **Vector Form:** $\vec{r}(t) = (5t^2 - t) \hat{i} + (2t^3) \hat{j} + (-3t + 2) \hat{k}$
 
 ---
 
