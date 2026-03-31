@@ -107,4 +107,3 @@ $$P(t) = 36t^3 + 50t - 5 \text{ (W)}$$
 | **Force** | $5 \hat{i} + 6t \hat{j}$ |
 | **Power** | $36t^3 + 50t - 5$ |
 
-Would you like me to calculate the total work done on the particle between $t = 0 \text{ s}$ and $t = 2 \text{ s}$?
