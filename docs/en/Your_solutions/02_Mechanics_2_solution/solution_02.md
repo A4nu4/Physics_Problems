@@ -51,7 +51,9 @@ $$k \approx 9869.6 \text{ N/m}$$
 
 The total mechanical energy of an ideal mass-spring system is conserved and is equal to the maximum potential energy stored in the spring when it is at its maximum displacement (the amplitude):
 
-
+$$E_{total} = U(t) + K(t)$$
+$$E_{total} = \frac{1}{2} k A^2 \cos^2(\omega t + \phi) + \frac{1}{2} k A^2 \sin^2(\omega t + \phi)$$
+$$E_{total} = \frac{1}{2} k A^2 \left[ \cos^2(\omega t + \phi) + \sin^2(\omega t + \phi) \right]$$
 $$E_{total} = \frac{1}{2} k A^2$$
 
 
@@ -77,3 +79,5 @@ $$E \approx 197.39 \text{ J}$$
 ### Final Results:
 * **Spring Constant ($k$):** **$1000\pi^2 \text{ N/m}$** ($\approx 9870 \text{ N/m}$)
 * **Total Mechanical Energy ($E$):** **$20\pi^2 \text{ J}$** ($\approx 197.4 \text{ J}$)
+
+
