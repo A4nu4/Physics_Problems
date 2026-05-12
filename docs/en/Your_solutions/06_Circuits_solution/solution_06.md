@@ -1,7 +1,3 @@
-To find the current flowing through the ammeter in **Screenshot 2026-05-12 at 11.39.18.png**, we apply Kirchhoff’s laws to the circuit loops.
-
----
-
 ### 1. Identify Loops and Directions
 
 We define two clockwise loops and the currents flowing through them:
