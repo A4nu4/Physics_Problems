@@ -1,7 +1,3 @@
-To find the currents $I_1, I_2$, and $I_3$ for the circuit shown in **image_fb6426.png**, we apply Kirchhoff’s laws. Based on the diagram and descriptions, $I_1$ flows through the left branch ($R_1$), $I_2$ through the center shared branch ($R_2$), and $I_3$ through the right branch ($\mathcal{E}_2, r_w$).
-
----
-
 ### 1. Kirchhoff’s Junction Rule
 
 At the top node, we define the relationship between the currents. Assuming $I_1$ and $I_3$ enter the node and $I_2$ leaves:
