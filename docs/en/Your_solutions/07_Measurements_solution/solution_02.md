@@ -4,7 +4,6 @@ The length and width of a rectangular plate are measured to be $L = (15.3 \pm 0.
 
 To find the area of the rectangular plate and its associated uncertainty, we use the formula for the area of a rectangle and apply the standard rules of **error propagation** for independent variables.
 
----
 
 ### 1. Calculate the Area ($A$)
 
