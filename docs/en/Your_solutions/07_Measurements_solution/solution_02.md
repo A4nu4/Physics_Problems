@@ -66,7 +66,7 @@ $$\frac{\Delta A}{128.52} = \sqrt{\left(\frac{0.1}{15.3}\right)^2 + \left(\frac{
 
 $$\frac{\Delta A}{128.52} = \sqrt{(0.00653)^2 + (0.01190)^2} = \sqrt{0.0000427 + 0.0014172} = \sqrt{0.0014599} \approx 0.03821$$
 
-$$\Delta A = 128.52 \times 0.03821 \approx 1.745\text{ cm}^2$$
+$$\Delta A = 128.52 \times 0.03821 \approx 1.75\text{ cm}^2$$
 
 ---
 
@@ -76,14 +76,14 @@ Depending on the specific grading criteria of your course, the answer can be rep
 
 ### Standard Statistical Reporting (Quadrature)
 
-1. **Uncertainty Value:** $\Delta A \approx 1.7\text{ cm}^2$ (rounded to two significant figures).
-2. **Matched Nominal Precision:** Since our uncertainty is certain up to the tenths place, we match the nominal area to the tenths place ($128.52 \rightarrow 128.5$).
+1. **Uncertainty Value:** $\Delta A \approx 1.75\text{ cm}^2$ (rounded to two significant figures).
+2. **Matched Nominal Precision:** Since our uncertainty is certain up to the tenths place, we match the nominal area to the tenths place ($128.52 \rightarrow 128.52$).
 
-$$\mathbf{A = (128.5 \pm 1.7)\text{ cm}^2}$$
+$$\mathbf{A = (128.52 \pm 1.75)\text{ cm}^2}$$
 
 ### Worst-Case Reporting (Linear Sum / Partial Derivatives)
 
-1. **Uncertainty Value:** $\Delta A \approx 2.4\text{ cm}^2$ (rounded to two significant figures).
-2. **Matched Nominal Precision:** We round the nominal area to the tenths place to match the uncertainty profile ($128.5$).
+1. **Uncertainty Value:** $\Delta A \approx 2.37\text{ cm}^2$ (rounded to two significant figures).
+2. **Matched Nominal Precision:** We round the nominal area to the tenths place to match the uncertainty profile ($128.52$).
 
-$$\mathbf{A = (128.5 \pm 2.4)\text{ cm}^2}$$
+$$\mathbf{A = (128.52 \pm 2.37)\text{ cm}^2}$$
