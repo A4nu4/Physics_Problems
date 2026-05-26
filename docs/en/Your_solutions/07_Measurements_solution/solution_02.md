@@ -60,5 +60,5 @@ Following standard scientific measurement conventions:
 The area of the plate with its propagated uncertainty is:
 
 
-$$A = (128.5 \pm 1.7)\text{ cm}^2$$
+$$A = (128.52 \pm 1.75)\text{ cm}^2$$
 
