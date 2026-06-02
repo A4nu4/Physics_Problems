@@ -1,5 +1,4 @@
 Calculate the orbital speed of the International Space Station (ISS), which orbits at an altitude of approximately 400 km above the Earth's surface. (Earth's mass $M_E \approx 5.97 \times 10^{24}$ kg). Compare this speed of Earth's orbital speed around the Sun (Earth-Sun distance $\approx 150 \times 10^6$ km, Earth's orbital period $\approx 365.25$ days). Which is faster, the ISS around the Earth or Earth in its orbit around the Sun?
-
 ---
 
 To find out which is traveling faster, we will calculate the orbital speed of the International Space Station (ISS) around the Earth and compare it to the orbital speed of the Earth around the Sun.
